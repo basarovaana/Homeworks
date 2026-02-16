@@ -27,7 +27,7 @@ public class ToDoView {
 
         for (int i = 0; i < tasks.size(); i++) {
             Task t = tasks.get(i);
-            String status = t.isDone() ? "Выполнено" : "Не выполнено";
+            String status = String.valueOf(t.isDone());
             System.out.println((i + 1) + ". "
                     + t.getText() + " — " + status
                     + " (до: " + t.getDeadline() + ")");
