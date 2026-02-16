@@ -83,9 +83,8 @@ public class ToDoController {
                 ArrayList<Task> tasks = model.getAll();
                 for (int i = 0; i < tasks.size(); i++) {
                     if (!tasks.get(i).isDone()) {
-                        System.out.println((i + 1) + ". [ ] "
-                                + tasks.get(i).getText()
-                                + " (до: " + tasks.get(i).getDeadline() + ")");
+                        System.out.println((i + 1) +
+                                 " (до: " + tasks.get(i).getDeadline() + ")");
                     }
                 }
             }
@@ -94,7 +93,7 @@ public class ToDoController {
                 ArrayList<Task> tasks = model.getAll();
                 for (int i = 0; i < tasks.size(); i++) {
                     if (tasks.get(i).isDone()) {
-                        System.out.println((i + 1) + ". [x] "
+                        System.out.println((i + 1)
                                 + tasks.get(i).getText()
                                 + " (до: " + tasks.get(i).getDeadline() + ")");
                     }
