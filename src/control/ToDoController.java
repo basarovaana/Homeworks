@@ -62,7 +62,7 @@ public class ToDoController {
                 }
 
                 model.addTask(text, deadline);
-                System.out.println("[Уведомление] Добавлена задача: " + text);
+                System.out.println("Добавлена задача: " + text);
             }
 
             if (choice == 3) {
