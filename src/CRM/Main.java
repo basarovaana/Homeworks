@@ -65,7 +65,7 @@ public class Main {
                 case 3:
                     controller.showDeals();
                     System.out.print("Введите номер сделки: ");
-                    int index = scanner.nextInt();
+                    int index = scanner.nextInt() - 1;
 
                     System.out.println("Выберите статус:");
                     System.out.println("1 - NEW");
@@ -77,13 +77,22 @@ public class Main {
 
                     DealStatus status = null;
 
-                    if (statusChoice == 1) status = DealStatus.NEW;
-                    if (statusChoice == 2) status = DealStatus.IN_PROGRESS;
-                    if (statusChoice == 3) status = DealStatus.CLOSED;
-
-                    controller.changeDealStatus(index, status);
-                    break;
-
+                    switch (statusChoice) {
+                        case 1:
+                            status = DealStatus.NEW;
+                            controller.changeDealStatus(index, status);
+                            break;
+                        case 2:
+                            status = DealStatus.IN_PROGRESS;
+                            controller.changeDealStatus(index, status);
+                            break;
+                        case 3:
+                            status = DealStatus.CLOSED;
+                            controller.changeDealStatus(index, status);
+                            break;
+                        default:
+                            System.out.println("Неверный ноемр статуса");
+                    }
                 case 4:
                     System.out.println("\nСделки после сортировки по статусу:");
                     controller.sortAndShowDeals();
