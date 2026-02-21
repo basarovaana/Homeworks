@@ -1,8 +1,8 @@
-package control;
+package ToDoList.control;
 
-import model.Task;
-import model.ToDoModel;
-import view.ToDoView;
+import ToDoList.model.Task;
+import ToDoList.model.ToDoModel;
+import ToDoList.view.ToDoView;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

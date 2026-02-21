@@ -1,4 +1,6 @@
-import control.ToDoController;
+package ToDoList;
+
+import ToDoList.control.ToDoController;
 
 public class Main {
 

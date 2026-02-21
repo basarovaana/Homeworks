@@ -1,6 +1,6 @@
-package view;
+package ToDoList.view;
 
-import model.Task;
+import ToDoList.model.Task;
 
 import java.util.ArrayList;
 

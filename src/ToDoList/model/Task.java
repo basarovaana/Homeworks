@@ -1,4 +1,4 @@
-package model;
+package ToDoList.model;
 
 public class Task {
 
